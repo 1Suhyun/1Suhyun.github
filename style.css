@@ -1,0 +1,127 @@
+body{
+ background-color: #ffe6e6;
+}
+.pagecontainer{
+width:100vw;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFF1E3;
+   
+  position: absolute;
+   padding: 150px 0;
+  text-align: center;
+  }
+
+h4{
+  color: #000000;
+}
+ .phonenumber{
+  font-size: 17px;
+    text-align: center;
+  color: black;
+ font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 430;
+  font-style: normal;
+  padding:1.5rem;
+   text-indent:-250px;
+
+
+}
+   
+   .button-submit {
+  background-color:#FFAEB3;
+  color:black;
+  justify-content:center;
+  text-align:center;
+  border-radius:10px;
+  width: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 580;
+  font-style: normal;
+  padding:1rem 0;
+  font-size:15px;
+     transition: padding 1s, background-color .3s;
+
+}
+
+.button-submit:hover{
+  background-color:#FF737B;
+  color:white;
+}
+
+.button-reset {
+  color: black;
+  background-color:#9CC4FF;
+  padding:1rem;
+  border-radius:10px;
+  width: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 580;
+  font-style: normal;
+  font-size:15px;
+     padding: 1rem 0;
+  transition: padding 1s, background-color .3s;
+}
+
+.button-reset:hover{
+  background-color:#3333cc;
+  color:white;
+}
+
+input {
+  padding:1rem;
+  width: 300px;
+  background-color:#ffffff;
+  font-size:15px;
+    
+}
+
+.belt-frame {
+   position: absolute;
+    top: 200px;
+    height: 130px;
+    width: 900px;
+    background-color: #FFF387;
+   display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 20px;
+   overflow: hidden;
+  top:35%;
+  border: 0.5px solid black;
+   box-shadow: 0px 3px 3px grey;
+
+ 
+  .text:hover{
+  color:#9CC4FF;
+  padding: 2.5rem;
+     rotate:8deg;
+}
+  
+  .text{
+    font-size: 30px;
+    text-align:center;
+    padding: 2.5rem; /* Changed from margin to padding, to make it clickable */
+    color: black;
+    user-select: none; /* Prevent selection on click */
+    cursor: pointer; /* Make cursor into pointer (hand) */
+    transition: color , rotate 1s; /*changed from background-color .3s*/
+    animation: moveBelt 2s infinite; /*changed from infinite linear;*/
+ font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+
+    }
+}
+
+ @keyframes moveBelt {
+
+  from {transform: translateX(-30px);}
+    to {transform: translateX(1000px);}
+}
